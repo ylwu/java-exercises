@@ -17,7 +17,6 @@ public class EightQueens {
            }
            findPath();
            row--;
-           
        }
        path[row] = 0;
     }
