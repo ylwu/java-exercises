@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 
 /*
@@ -120,5 +122,16 @@ public class HashTable<K, V> {
         }
         
     }
-
+       public static void main (String[] args){
+           List a = new ArrayList<String>();
+           List c = new ArrayList<String>();
+           a.add("first");
+           List b = a;
+           a.add("second");
+           c.add("third");
+           a = c;
+           System.out.println(a);
+           System.out.println(b);
+           System.out.println(c);
+       }
 }

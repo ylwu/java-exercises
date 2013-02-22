@@ -30,4 +30,24 @@ public class LinkedList<T> {
             this.data = data;
         }
     }
+    
+    /*
+     * Reverse the linked List.
+     * TripAdvisor Interview Question
+     */
+    public void reverse(){
+        if (first == null){
+            return;
+        }
+        Node curNode = first;
+        Node preNode = null;
+        while (curNode.next != null){
+            Node save = curNode.next;
+            curNode.next = preNode;
+            preNode = curNode;
+            curNode = save;
+        }
+        first = curNode;
+        curNode.next = preNode;
+    }
 }
