@@ -123,6 +123,10 @@ public class HashTable<K, V> {
         
     }
        public static void main (String[] args){
+           String k = "abc";
+           String m = k.toUpperCase();
+           System.out.println(m);
+           System.out.println(k);
            List a = new ArrayList<String>();
            List c = new ArrayList<String>();
            a.add("first");
